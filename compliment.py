@@ -26,4 +26,4 @@ printer.setSize('L')
 printer.setLineHeight()
 printer.justify('C')
 printer.println("WNDR Museum")
-
+printer.feed(3)
