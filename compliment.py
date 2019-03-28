@@ -17,13 +17,15 @@ flattery = [
     "Being around you makes everything better!",
     "You're one of a kind!"
 ]
+# compliment = random.choice(flattery)
+compliment = "The quick brown fox jumped over the laxy dog"
 
 
 printer.setSize('M')
 printer.setLineHeight(50)
-printer.println(random.choice(flattery))
+printer.print('{:<32}'.format(compliment))
 printer.setSize('L')
-printer.setLineHeight()
+printer.feed(1)
 printer.justify('C')
-printer.println("WNDR Museum")
+printer.println("WNDR")
 printer.feed(3)
