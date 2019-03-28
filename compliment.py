@@ -23,7 +23,7 @@ compliment = "The quick brown fox jumped over the laxy dog"
 
 printer.setSize('M')
 printer.setLineHeight(50)
-printer.print('{:<32}'.format(compliment))
+printer.print('{:^32}'.format(compliment))
 printer.setSize('L')
 printer.feed(1)
 printer.justify('C')
