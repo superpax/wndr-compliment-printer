@@ -17,6 +17,7 @@
 from __future__ import print_function
 import RPi.GPIO as GPIO
 import subprocess, time, socket
+import logging
 from PIL import Image
 from Adafruit_Thermal import *
 
@@ -30,8 +31,9 @@ lastId       = '1'   # State information passed to/from interval script
 printer      = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 
-# Called when button is briefly tapped.  Invokes time/temperature script.
+# Called when button is briefly tapped.  Invokes compliment script.
 def tap():
+
   GPIO.output(ledPin, GPIO.HIGH)  # LED on while working
   subprocess.call(["python", "compliment.py"])
   GPIO.output(ledPin, GPIO.LOW)
@@ -114,7 +116,6 @@ while(True):
   # Poll current button state and time
   buttonState = GPIO.input(buttonPin)
   t           = time.time()
-
   # Has button state changed?
   if buttonState != prevButtonState:
     prevButtonState = buttonState   # Yes, save new state/time
