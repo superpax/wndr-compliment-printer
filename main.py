@@ -33,7 +33,7 @@ printer      = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 # Called when button is briefly tapped.  Invokes compliment script.
 def tap():
-
+  logging.debug('tap triggered')
   GPIO.output(ledPin, GPIO.HIGH)  # LED on while working
   subprocess.call(["python", "compliment.py"])
   GPIO.output(ledPin, GPIO.LOW)
@@ -149,20 +149,20 @@ while(True):
 
   # Once per day (currently set for 6:30am local time, or when script
   # is first run, if after 6:30am), run forecast and sudoku scripts.
-  l = time.localtime()
-  if (60 * l.tm_hour + l.tm_min) > (60 * 6 + 30):
-    if dailyFlag == False:
-      daily()
-      dailyFlag = True
-  else:
-    dailyFlag = False  # Reset daily trigger
+  # l = time.localtime()
+  # if (60 * l.tm_hour + l.tm_min) > (60 * 6 + 30):
+  #   if dailyFlag == False:
+  #     daily()
+  #     dailyFlag = True
+  # else:
+  #   dailyFlag = False  # Reset daily trigger
 
   # Every 30 seconds, run Twitter scripts.  'lastId' is passed around
   # to preserve state between invocations.  Probably simpler to do an
   # import thing.
-  if t > nextInterval:
-    nextInterval = t + 30.0
-    result = interval()
-    if result is not None:
-      lastId = result.rstrip('\r\n')
+  # if t > nextInterval:
+  #   nextInterval = t + 30.0
+  #   result = interval()
+  #   if result is not None:
+  #     lastId = result.rstrip('\r\n')
 
