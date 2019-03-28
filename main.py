@@ -33,7 +33,7 @@ printer      = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 # Called when button is briefly tapped.  Invokes time/temperature script.
 def tap():
   GPIO.output(ledPin, GPIO.HIGH)  # LED on while working
-  subprocess.call(["python", "timetemp.py"])
+  subprocess.call(["python", "compliment.py"])
   GPIO.output(ledPin, GPIO.LOW)
 
 
@@ -47,23 +47,23 @@ def hold():
   GPIO.output(ledPin, GPIO.LOW)
 
 
-# Called at periodic intervals (30 seconds by default).
-# Invokes twitter script.
-def interval():
-  GPIO.output(ledPin, GPIO.HIGH)
-  p = subprocess.Popen(["python", "twitter.py", str(lastId)],
-    stdout=subprocess.PIPE)
-  GPIO.output(ledPin, GPIO.LOW)
-  return p.communicate()[0] # Script pipes back lastId, returned to main
+# # Called at periodic intervals (30 seconds by default).
+# # Invokes twitter script.
+# def interval():
+#   GPIO.output(ledPin, GPIO.HIGH)
+#   p = subprocess.Popen(["python", "twitter.py", str(lastId)],
+#     stdout=subprocess.PIPE)
+#   GPIO.output(ledPin, GPIO.LOW)
+#   return p.communicate()[0] # Script pipes back lastId, returned to main
 
 
-# Called once per day (6:30am by default).
-# Invokes weather forecast and sudoku-gfx scripts.
-def daily():
-  GPIO.output(ledPin, GPIO.HIGH)
-  subprocess.call(["python", "forecast.py"])
-  subprocess.call(["python", "sudoku-gfx.py"])
-  GPIO.output(ledPin, GPIO.LOW)
+# # Called once per day (6:30am by default).
+# # Invokes weather forecast and sudoku-gfx scripts.
+# def daily():
+#   GPIO.output(ledPin, GPIO.HIGH)
+#   subprocess.call(["python", "forecast.py"])
+#   subprocess.call(["python", "sudoku-gfx.py"])
+#   GPIO.output(ledPin, GPIO.LOW)
 
 
 # Initialization

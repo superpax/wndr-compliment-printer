@@ -18,9 +18,7 @@ flattery = [
     "Being around you makes everything better!",
     "You're one of a kind!"
 ]
-# compliment = random.choice(flattery)
-compliment = "The quick brown fox jumped over the laxy dog"
-
+compliment = random.choice(flattery)
 
 printer.setSize('M')
 printer.setLineHeight(50)
