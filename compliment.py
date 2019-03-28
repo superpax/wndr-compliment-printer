@@ -20,8 +20,10 @@ flattery = [
 
 
 printer.setSize('M')
+printer.setLineHeight(50)
 printer.println(random.choice(flattery))
 printer.setSize('L')
+printer.setLineHeight()
 printer.justify('C')
 printer.println("WNDR Museum")
 
