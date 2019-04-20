@@ -18,7 +18,7 @@ flattery = [
     "It's a known fact that you're gonna go far.",
     "You take on challenges like you were born for it.",
     "You know you're slaying, right?",
-    "It's so cool to watch you be in your element.",
+    "It's so cool to watch you be  in your element.",
     "Everything is brighter when you're in a room.",
     "People spend years trying to get what you've got.",
     "In the middle of chaos, you are an ocean of calm.",
@@ -34,7 +34,7 @@ flattery = [
     "You are the person equivalent of that new-book smell.",
     "Even if you were cloned, you'd still be one-of-a-kind. And the cooler one.",
     "No one could take what you've got away from you.",
-    "People love just being around you. How could they not?",
+    "People love just being around   you. How could they not?",
     "You've got the biggest heart this world has ever seen.",
     "All obstacles are opportunities to you.",
     "It's almost unbelievable to think of what you've already accomplished in life."
