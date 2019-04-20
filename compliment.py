@@ -23,7 +23,7 @@ flattery = [
     "People spend years trying to \n get what you've got.",
     "In the middle of chaos, you \n are an ocean of calm.",
     "You're great now and you've \n probably been great since \n forever.",
-    "Actions speak louder than words, \n and yours tell an incredible \n story.",
+    "Actions speak louder than words,\n and yours tell an incredible \n story.",
     "You've got a lot of people \n that look up to you.",
     "If you were a box of crayons,\n you'd be the giant name-brand \n one with the built-in sharpener.",
     "You're more helpful than you \n realize.",
