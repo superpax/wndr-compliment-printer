@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding: utf-8
 
 from __future__ import print_function
 from Adafruit_Thermal import *
@@ -24,8 +25,7 @@ flattery = [
     "You’re great now and you’ve probably been great since forever.",
     "Actions speak louder than words, and yours tell an incredible story.",
     "You’ve got a lot of people that look up to you.",
-    "If you were a box of crayons, you’d be the giant name-brand one with the built-in
-     sharpener.",
+    "If you were a box of crayons, you’d be the giant name-brand one with the built-in sharpener.",
     "You’re more helpful than you realize.",
     "There’s nothing more powerful than your presence in a room.",
     "Your imagination is like an infinity room.",
