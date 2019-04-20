@@ -12,7 +12,7 @@ flattery = [
     "You are making moves and it SHOWS.",
     "That color is perfect on you.",
     "Jokes are funnier when you tell them.",
-    "You're more fun than bubble wrap.",
+    "You're more fun than bubble wrap",
     "Your talent is next level.",
     "Your perspective on the world is refreshing.",
     "It's a known fact that you're \n gonna go far.",
@@ -23,7 +23,7 @@ flattery = [
     "People spend years trying to get what you've got.",
     "In the middle of chaos, you are an ocean of calm.",
     "You're great now and you've probably been great since forever.",
-    "Actions speak louder than words, and yours tell an incredible story.",
+    "Actions speak louder than words, and yours tell an incredible \n story.",
     "You've got a lot of people that look up to you.",
     "If you were a box of crayons, you'd be the giant name-brand one with the built-in sharpener.",
     "You're more helpful than you \n realize.",
@@ -37,7 +37,7 @@ flattery = [
     "People love just being around   you. How could they not?",
     "You've got the biggest heart this world has ever seen.",
     "All obstacles are opportunities to you.",
-    "It's almost unbelievable to think of what you've already accomplished in life."
+    "It's almost unbelievable to think of what you've already \n accomplished in life."
 ]
 compliment = random.choice(flattery)
 
